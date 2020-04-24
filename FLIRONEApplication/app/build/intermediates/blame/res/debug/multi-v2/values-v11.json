@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kaiyeyu/Desktop/master project/FLIRONEApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+            "outputFile": "/Users/kaiyeyu/Desktop/master project/code/2019_fall_Master/FLIRONEApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
             "map": [
                 {
-                    "source": "/Users/kaiyeyu/Desktop/master project/FLIRONEApplication/app/src/main/res/values-v11/styles.xml",
+                    "source": "/Users/kaiyeyu/Desktop/master project/code/2019_fall_Master/FLIRONEApplication/app/src/main/res/values-v11/styles.xml",
                     "from": {
                         "startLines": "10,2",
                         "startColumns": "4,4",

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/kaiyeyu/Desktop/master project/FLIRONEApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+            "outputFile": "/Users/kaiyeyu/Desktop/master project/code/2019_fall_Master/FLIRONEApplication/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
             "map": [
                 {
-                    "source": "/Users/kaiyeyu/Desktop/master project/FLIRONEApplication/app/src/main/res/values/strings.xml",
+                    "source": "/Users/kaiyeyu/Desktop/master project/code/2019_fall_Master/FLIRONEApplication/app/src/main/res/values/strings.xml",
                     "from": {
                         "startLines": "3,10,4,5,6,14,7,9,8,12,13,11,15",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -59,20 +59,22 @@
                     }
                 },
                 {
-                    "source": "/Users/kaiyeyu/Desktop/master project/FLIRONEApplication/app/src/main/res/values/colors.xml",
+                    "source": "/Users/kaiyeyu/Desktop/master project/code/2019_fall_Master/FLIRONEApplication/app/src/main/res/values/styles.xml",
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "17",
-                        "endColumns": "49",
-                        "endOffsets": "62"
+                        "startLines": "4,15,23,8",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "93,569,898,224",
+                        "endLines": "6,21,23,13",
+                        "endColumns": "12,12,36,12",
+                        "endOffsets": "218,892,930,563"
                     },
                     "to": {
-                        "startLines": "145",
-                        "startColumns": "4",
-                        "startOffsets": "7106",
-                        "endColumns": "49",
-                        "endOffsets": "7151"
+                        "startLines": "642,1703,1710,1711",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "54471,122341,122669,122705",
+                        "endLines": "644,1709,1710,1716",
+                        "endColumns": "12,12,35,12",
+                        "endOffsets": "54596,122664,122700,123044"
                     }
                 },
                 {
@@ -131,22 +133,20 @@
                     }
                 },
                 {
-                    "source": "/Users/kaiyeyu/Desktop/master project/FLIRONEApplication/app/src/main/res/values/styles.xml",
+                    "source": "/Users/kaiyeyu/Desktop/master project/code/2019_fall_Master/FLIRONEApplication/app/src/main/res/values/colors.xml",
                     "from": {
-                        "startLines": "4,15,23,8",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "93,569,898,224",
-                        "endLines": "6,21,23,13",
-                        "endColumns": "12,12,36,12",
-                        "endOffsets": "218,892,930,563"
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "17",
+                        "endColumns": "49",
+                        "endOffsets": "62"
                     },
                     "to": {
-                        "startLines": "642,1703,1710,1711",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "54471,122341,122669,122705",
-                        "endLines": "644,1709,1710,1716",
-                        "endColumns": "12,12,35,12",
-                        "endOffsets": "54596,122664,122700,123044"
+                        "startLines": "145",
+                        "startColumns": "4",
+                        "startOffsets": "7106",
+                        "endColumns": "49",
+                        "endOffsets": "7151"
                     }
                 }
             ]
