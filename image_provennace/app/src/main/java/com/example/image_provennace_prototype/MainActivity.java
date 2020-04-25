@@ -375,8 +375,7 @@ public class MainActivity extends AppCompatActivity {
 
         MessageDigest md = MessageDigest.getInstance("MD5");
         //byteArray=argbS.getBytes("UTF-8");
-
-
+        //byteArray="123".getBytes();
 
 
         md.update(byteArray);
@@ -424,12 +423,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         Log.e("pixels_without_space",sb.toString());
+        Log.e("pixels_without_space",sb.toString().substring(sb.toString().length()-20));
+
         byteArray=sb.toString().getBytes();
-        argbS.replace(" ", "");
+
         Log.e("pixels-----argb",argbS);
 
-        Log.e("pixels-----argb------length2",String.valueOf(argb.length));
-        Log.e("pixels-----intarray------length",String.valueOf(intArray.length));
+//        Log.e("pixels-----argb------length2",String.valueOf(argb.length));
+//        Log.e("pixels-----intarray------length",String.valueOf(intArray.length));
     }
 
 

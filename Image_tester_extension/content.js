@@ -37,6 +37,7 @@ eximages = [];
 
 var allMetaData;
 var make;
+var hash = "";
 //var sMake = "";
 
 (function () {
@@ -1311,9 +1312,11 @@ function calcMD5(str) {
 
 function readImage(image) {
 
+
     var img = new Image();
     img.src = image.src;
     img.onload = function () {
+
         var c = document.createElement('canvas');
         c.height = image.naturalHeight;
         c.width = image.naturalWidth;
@@ -1324,7 +1327,7 @@ function readImage(image) {
         //     drawImage(image);
         // }
         // image.src = img.src;
-        console.log(ctx);
+        //console.log(ctx);
 
 
         console.log("height : " + c.height + "weight: " + c.width);
@@ -1350,25 +1353,28 @@ function readImage(image) {
         }
 
         console.log(newStr);
-
-
-
-
-
-
-
         pixS = pix.toString();
         console.log("imgaeData = " + pixS);
-        console.log("imgae = " + pix.length);
-        hash = calcMD5(newStr);
-        console.log("Hash is = " + hash);
-        console.log("raw buffer length= " + pix.length);
+        //console.log("imgae = " + pix.length);
+        var hash = calcMD5(newStr);
+        //console.log("New hash is = " + hash);
 
-        return hash;
+        if (hash.charAt(0) == 0) {
+            hash = hash.substring(1);
+        }
+        console.log("New hash is = " + hash);
+
+        //console.log("raw buffer length= " + pix.length);
+
+
+
+
+
     }
 
     // img.src = image.src;
-    console.log("Im here!!!!!!");
+    //console.log("Im here!!!!!!");
+
 
 
 }
@@ -1455,7 +1461,7 @@ for (var i = 0; i < images.length; i++) {
         //signature = atob(sDes);
         // console.log(i)
         //console.log(typeof (sDes))
-        //console.log(sDes)
+        console.log("The original hash in EXIF is： " + sDes)
         console.log("####################")
         //var verified = window.crypto.subtle.verify("ECDSA", pubkey, signature, encodedMessage);
 
@@ -1478,10 +1484,10 @@ for (var i = 0; i < images.length; i++) {
 
 
             console.log("There is a EXIF!!");
-            var b64 = btoa(sDes);
-            var unic = atob(b64);
-            console.log(unic);
-            console.log(typeof (b64));
+            // var b64 = btoa(sDes);
+            // var unic = atob(b64);
+            // console.log(unic);
+            // console.log(typeof (b64));
 
             fetch(fileUrl)
                 .then(r => r.text())
@@ -1509,8 +1515,9 @@ for (var i = 0; i < images.length; i++) {
             //     this.src = picture;
             // }
 
-            hash = readImage(this);
-            console.log(hash);
+            readImage(this);
+
+            //console.log("**********************************" + calcMD5("123"));
 
         }
         else {
